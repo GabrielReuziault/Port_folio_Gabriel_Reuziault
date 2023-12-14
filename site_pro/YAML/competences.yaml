@@ -1,0 +1,45 @@
+developpement :
+    - competence: Language html
+      niveau: 4
+
+    - competence: Language css
+      niveau: 4
+
+    - competence: Language Python
+      niveau: 4
+
+    - competence: php/yaml
+      niveau: 3
+
+reseau:
+    - competence: Adressage ipV4
+      niveau: 4
+
+    - competence: Analyse Trame ARP, Ethernet
+      niveau: 3
+
+    - competence: Ligne de commande Linux
+      niveau: 3
+
+    - competence: Routage inter VLAN avec DHCP
+      niveau: 3
+
+langues:
+    - competence: Français
+      niveau: 5
+
+    - competence: Anglais
+      niveau: 4
+
+    - competence: Espagnol
+      niveau: 3
+
+certif:
+    - competence: Voltaire
+      niveau: 4
+    
+    - competence: Pix
+      niveau: 4
+
+    - competence: Secnum MOOC
+      niveau: 4

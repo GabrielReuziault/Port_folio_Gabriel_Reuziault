@@ -1,0 +1,20 @@
+- formation: Collègien
+  etablissement: Collège Jacques Prévert
+  debut: Septembre 2016
+  fin: Juillet 2020
+  lieu: 9 Rue du Loup Pendu, 14790 Verson
+  contenu: diplomé Brevet mention Très Bien
+
+- formation: Lycéen
+  etablissement: Lycée Malherbe 
+  debut: Septembre 2020
+  fin: Juillet 2023
+  lieu:  14 Av. Albert Sorel, 14000 Caen
+  contenu: diplomé Mention Assez Bien avec option Mathématiques et NSI (Numérique et Science de l'Informatique)
+
+- formation: BTS SIO (option SLAM)
+  etablissement: CaenSup Saint Ursule
+  debut: Septembre 2023
+  fin: Juin 2025
+  lieu: 30 Rue de la Miséricorde, 14000 Caen
+  contenu: Formation toujours en cours
