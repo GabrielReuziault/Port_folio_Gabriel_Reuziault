@@ -1,7 +1,7 @@
 <section id="competences">
 <h1>Compétences</h1>
 <?php 
-require_once("../YAML/yaml/yaml.php");
+//require_once("../YAML/yaml/yaml.php");
 $data = yaml_parse_file('YAML/competences.yaml');
 
 echo "<h2>Développement</h2>\n";

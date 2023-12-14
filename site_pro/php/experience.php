@@ -1,7 +1,7 @@
 <section id="experience">
 <h1>Expérience</h1>
 <?php 
-require_once("../YAML/yaml/yaml.php");
+//require_once("../YAML/yaml/yaml.php");
 $data=yaml_parse_file('YAML/experience.yaml');
 
 echo "<h2>Mes expériences professionnelles</h2>\n";
