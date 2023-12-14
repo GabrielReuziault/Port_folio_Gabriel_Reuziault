@@ -15,7 +15,7 @@
                 <li><a href="#experience">Expérience</a></li>
                 <li><a href="#formation">Formation</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="">LinkedIn</a></li>
+                <li><a href="#www.linkedin.com/in/gabriel-reuziault-2a22842a5">LinkedIn</a></li>
             </ul>
         </header>
         <main>
