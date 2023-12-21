@@ -11,5 +11,5 @@ foreach($data AS $uneExp){
 
 ?>
 
-<p>Pour accéder à mon CV, cliquer <a href="cv.pdf">ici</a></p>
+<p>Pour accéder à mon CV, cliquer <a href="documents/cv.pdf">ici</a></p>
 </section>

@@ -10,7 +10,7 @@ developpement :
 
     - competence: php/yaml
       niveau: 3
-      
+
     - competence: sql
       niveau: 3
 
@@ -39,10 +39,10 @@ langues:
 
 certif:
     - competence: Voltaire
-      niveau: 4
+      niveau: Niveau 9 de la formation
     
     - competence: Pix
-      niveau: 4
+      niveau: score de 503
 
     - competence: Secnum MOOC
-      niveau: 4
+      niveau: <a href="documents/attestation_secnum.pdf">Lien vers mon attestation</a>
