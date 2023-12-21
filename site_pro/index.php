@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Site Professionel Reuziault Gabriel</title>
 		<link rel="stylesheet" href="style.css">
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LceODgpAAAAAFIUIB0voF4a_tJ-748T1_KAHEqX"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
 	<body>
         <header>

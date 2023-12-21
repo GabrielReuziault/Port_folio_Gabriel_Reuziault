@@ -9,14 +9,15 @@ require "/var/www/vendor/phpmailer/phpmailer/src/SMTP.php";
 ?>
 <section id="contact">
     <h1>Contact</h1>
-    <form action="/#contact" method="post">
+    <form method="post">
 
         <input type="text" name="to" value="gabriel.reuziault@sts-sio-caen.info">
         <label for="subject">Objet</label>
         <input type="text" name="subject" placeholder="Subject">
         <label for="message">Message</label>
         <textarea name="body"></textarea>
-        <button type="submit">Envoyer mail</button>
+        <div class="g-recaptcha" data-sitekey="6LdKuDgpAAAAACS1sNwzqVPXNplhLU1oMKElmbJQ"></div>
+        <button type="submit" name="ok">Envoyer mail</button>
     </form>
 <?php
  
@@ -50,3 +51,21 @@ if(!empty($_POST)) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
+
+    require 'captcha/autoload.php';
+    if(isset($_POST['ok'])){
+        $recaptcha = new \ReCaptcha\ReCaptcha("6LdKuDgpAAAAAHl1qTzjHrs2AqWDBvyxkQ0G6IyC");
+
+        $gRecaptchaResponse = $_POST['g-recaptcha-response'];
+
+        $resp = $recaptcha->setExpectedHostname('srv1-vm-1143.sts-sio-caen.info')
+                  ->verify($gRecaptchaResponse, $remoteIp);
+
+        if ($resp->isSuccess()) {
+            echo "Succes !";
+        } else {
+            var_dump($errors);
+        }
+    }
+
+    ?>
