@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Site Professionel Reuziault Gabriel</title>
 		<link rel="stylesheet" href="style.css">
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfiDTEpAAAAAGaoKb9CZfP7TPhyx_OU-aCbCCAj"></script>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LceODgpAAAAAFIUIB0voF4a_tJ-748T1_KAHEqX"></script>
     </head>
 	<body>
         <header>
@@ -25,7 +25,7 @@
             include("php/competences.php");
             include("php/experience.php");
             include("php/formation.php");
-            include("php/contact.php");
+            include("php/new_contact.php");
             ?>
         </main>
     </body>
