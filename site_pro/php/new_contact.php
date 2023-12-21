@@ -18,12 +18,13 @@ if (isset($_POST['nom'])) {
     $email = $_POST['email'];
     $objet = $_POST['objet'];
     $message = $_POST['message'];
+    $to = "gabriel.reuziault@sts-sio-caen.info";
 
     $headers = 'From: ' . $email . "\r\n" .
     'Reply-To: ' . $email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-  mail('gabriel.reuziault@sts-sio-caen.info', $objet, $message, $headers);
+  mail($to, $objet, $message, $headers);
 
   alert('Votre message a bien été envoyé.');
 } 
