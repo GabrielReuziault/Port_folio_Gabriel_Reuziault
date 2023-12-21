@@ -33,11 +33,7 @@ foreach($data["langues"] as $uneDonnee){
 
 echo "<h2>Certifications</h2>\n";
 foreach($data["certif"] as $uneDonnee){
-    echo "<p>".ucfirst($uneDonnee["competence"])." : ";
-    for($i = 0; $i < $uneDonnee["niveau"]; $i++){
-        echo "⭐";
-    }
-    echo "</p>\n";
+    echo "<p>".ucfirst($uneDonnee["competence"])." : score de ".$uneDonnee["niveau"]."</p>\n";
 }
 ?>
 </section>

@@ -10,6 +10,9 @@ developpement :
 
     - competence: php/yaml
       niveau: 3
+      
+    - competence: sql
+      niveau: 3
 
 reseau:
     - competence: Adressage ipV4
