@@ -4,9 +4,9 @@
 //require_once("../YAML/yaml/yaml.php");
 $data = yaml_parse_file('YAML/a_propos.yaml');
 
-echo "<img id='img' src=".$data["photo"].">";
-
 echo "<h2>".$data["accroche"]."</h2>\n";
+
+echo "<img id='img' src=".$data["photo"].">";
 
 echo "<p>".$data["paragraphe_presentation"]."</p>\n";
 
