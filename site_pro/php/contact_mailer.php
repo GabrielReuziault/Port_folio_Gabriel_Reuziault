@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use \PHPMailer\PHPMailer\SMTP;
  
 ?>
-<form action="contact_mailer.php" method="post">
+<form action="index.php#Contact" method="post">
 
     <input type="text" name="to" value="gabriel.reuziault@sts-sio-caen.info">
     <label for="subject">Objet</label>
