@@ -79,7 +79,7 @@ textarea {
     height: 200px;
 }
 
-input[type="submit"] {
+button {
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
