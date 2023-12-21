@@ -14,6 +14,8 @@
     </form>
 <?php
 if (isset($_POST['nom'])) {
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
     $nom = $_POST['nom'];
     $email = $_POST['email'];
     $objet = $_POST['objet'];
