@@ -18,6 +18,7 @@ if (isset($_POST['nom'])) {
     $email = $_POST['email'];
     $objet = $_POST['objet'];
     $message = $_POST['message'];
+    $to = 'gabriel.reuziault@sts-sio-caen.info';
 
     $captcha = $_POST['g-recaptcha-response'];
     $url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -44,7 +45,7 @@ if (isset($_POST['nom'])) {
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-      mail('gabriel.reuziault@sts-sio-caen.info', $objet, $message, $headers);
+      mail($to, $objet, $message, $headers);
 
       echo 'Votre message a bien été envoyé.';
     } else {
