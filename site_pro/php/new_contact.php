@@ -20,7 +20,7 @@ if (isset($_POST['nom'])) {
     $objet = $_POST['objet'];
     $message = $_POST['message'];
     $to = "gabriel.reuziault@sts-sio-caen.info";
-    $headers = 'De : ' . $email . "\r\n" .
+    $headers = 'De : '.$nom.", ".$email."\r\n" .
     mail($to, $objet, $message, $headers);
     echo("Votre message a bien été envoyé.");
 }
