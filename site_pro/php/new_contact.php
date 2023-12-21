@@ -9,7 +9,6 @@
             <input type="text" name="objet" id="objet">
         <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
-            <div class="g-recaptcha" data-sitekey="6LfiDTEpAAAAAGaoKb9CZfP7TPhyx_OU-aCbCCAj"></div>
             <input type="submit" value="Envoyer">
     </form>
 <?php
