@@ -9,7 +9,7 @@
             <input type="text" name="objet" id="objet">
         <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
-            <button type="submit" value="Envoyer"></button>
+            <button type="submit" value="Envoyer">Envoyer votre mail</button>
     </form>
 <?php
 if (isset($_POST['nom'])) {
