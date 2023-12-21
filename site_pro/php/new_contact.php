@@ -25,5 +25,5 @@ if (isset($_POST['nom'])) {
 
   mail('gabriel.reuziault@sts-sio-caen.info', $objet, $message, $headers);
 
-  echo 'Votre message a bien été envoyé.';
+  alert('Votre message a bien été envoyé.');
 } 
