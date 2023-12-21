@@ -9,7 +9,7 @@ require "/var/www/vendor/phpmailer/phpmailer/src/SMTP.php";
 ?>
 <section id="contact">
     <h1>Contact</h1>
-    <form action="contact_mailer.php" method="post">
+    <form action="/#contact" method="post">
 
         <input type="text" name="to" value="gabriel.reuziault@sts-sio-caen.info">
         <label for="subject">Objet</label>
