@@ -12,7 +12,7 @@
             <div class="g-recaptcha" data-sitekey="6LfiDTEpAAAAAGaoKb9CZfP7TPhyx_OU-aCbCCAj"></div>
             <input type="submit" value="Envoyer">
     </form>
-    <?php
+<?php
 if (isset($_POST['nom'])) {
     $nom = $_POST['nom'];
     $email = $_POST['email'];
@@ -23,3 +23,4 @@ if (isset($_POST['nom'])) {
     mail($to, $objet, $message, $headers);
     echo("Votre message a bien été envoyé.");
 }
+?>
