@@ -4,15 +4,17 @@ use PHPMailer\PHPMailer\PHPMailer;
 use \PHPMailer\PHPMailer\SMTP;
  
 ?>
-<form action="index.php#Contact" method="post">
+<section id="contact">
+    <h1>Contact</h1>
+    <form action="index.php#Contact" method="post">
 
-    <input type="text" name="to" value="gabriel.reuziault@sts-sio-caen.info">
-    <label for="subject">Objet</label>
-    <input type="text" name="subject" placeholder="Subject">
-    <label for="message">Message</label>
-    <textarea name="body"></textarea>
-    <button type="submit">Envoyer mail</button>
-</form>
+        <input type="text" name="to" value="gabriel.reuziault@sts-sio-caen.info">
+        <label for="subject">Objet</label>
+        <input type="text" name="subject" placeholder="Subject">
+        <label for="message">Message</label>
+        <textarea name="body"></textarea>
+        <button type="submit">Envoyer mail</button>
+    </form>
 <?php
  
 if(!empty($_POST)) {
