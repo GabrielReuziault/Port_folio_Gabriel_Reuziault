@@ -1,12 +1,15 @@
 <?php
-include_once './../vendor/autoload.php';
+include_once '/usr/share/php/Symfony/Contracts/Service/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
-use \PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\SMTP;
+require "var/www/vendor/phpmailer/phpmailer/src/Exception.php";
+require "var/www/vendor/phpmailer/phpmailer/src/PHPMailer.php";
+require "var/www/vendor/phpmailer/phpmailer/src/SMTP.php";
  
 ?>
 <section id="contact">
     <h1>Contact</h1>
-    <form action="index.php#Contact" method="post">
+    <form action="contact_mailer.php" method="post">
 
         <input type="text" name="to" value="gabriel.reuziault@sts-sio-caen.info">
         <label for="subject">Objet</label>

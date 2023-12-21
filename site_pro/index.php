@@ -25,7 +25,7 @@
             include("php/competences.php");
             include("php/experience.php");
             include("php/formation.php");
-            include("php/new_contact.php");
+            include("php/contact_mailer.php");
             ?>
         </main>
     </body>
