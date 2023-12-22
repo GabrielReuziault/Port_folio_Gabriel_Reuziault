@@ -45,12 +45,9 @@ if(!empty($_POST)) {
         $mail->Body = $_POST['body']??'This is the HTML message body <b>in bold!</b>';
  
         $mail->send();
-        echo 'Message has been sent';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
-}
-
     require 'captcha/autoload.php';
     if(isset($_POST['ok'])){
         $recaptcha = new \ReCaptcha\ReCaptcha("6LdKuDgpAAAAAHl1qTzjHrs2AqWDBvyxkQ0G6IyC");
@@ -59,6 +56,12 @@ if(!empty($_POST)) {
 
         $resp = $recaptcha->setExpectedHostname('srv1-vm-1143.sts-sio-caen.info')
                   ->verify($gRecaptchaResponse, $remoteIp);
-    }
 
-    ?>
+        if ($resp->isSuccess()) {
+            echo "Mail envoyer avec succès !";
+        } else {
+            echo "Captcha non validé !";
+        }
+    }
+}
+?>
